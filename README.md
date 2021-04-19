@@ -1,18 +1,18 @@
 ***Setup with Anaconda:***
 
-1. create virtual environment and activate
-conda create -n st python pandas tqdm
-conda activate st
+1. create virtual environment and activate  
+conda create -n st python pandas tqdm  
+conda activate st  
+ 
+2. install pytorch (specified version that is cpu only, as my machine does not have cuda graphic card)  
+conda install pytorch cpuonly -c pytorch  
+(else, for cuda: conda install pytorch>=1.6 cudatoolkit=11.0 -c pytorch)  
 
-2. install pytorch (specified version that is cpu only, as my machine does not have cuda graphic card)
-conda install pytorch cpuonly -c pytorch
-(else, for cuda: conda install pytorch>=1.6 cudatoolkit=11.0 -c pytorch)
+3. install simpletransformer  
+pip install simpletransformers  
 
-3. install simpletransformer
-pip install simpletransformers
-
-4. install wandb (weights and biases) for experiment tracking and visualizin training in a web browser.
-pip install wandb
+4. install wandb (weights and biases) for experiment tracking and visualizin training in a web browser.  
+pip install wandb  
 
 
 
